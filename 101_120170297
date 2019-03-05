@@ -1,0 +1,31 @@
+<?php
+
+$grades = array(
+	"CSCI2309" =>89 , 
+	"SICT2307" =>89 , 
+	"SICT2107" =>94 , 
+	"CSCI2309" =>89 , 
+	"SDEV2301" =>94 ,
+	"CSCI2109" =>89 ,
+	);
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assignment 1</title>
+</head>
+<body>
+
+	<table border="1">
+		<?php 
+			echo "<tr><th>Course</th><th>Grade</th></tr>";
+		foreach ($grades as $key => $value) {
+			echo "<tr><th>".$key."</th>"."<td>".$value."</td>"."</tr>";
+		}
+		 ?>
+	</table>
+
+
+</body>
+</html>
